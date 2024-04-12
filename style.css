@@ -1,23 +1,45 @@
-.logo {
+h1 {
 color: #000;
+text-align: center;
 font-size: 1.5rem;
 font-weight: bold;
 font-style: italic;
 padding: 0 2rem;
 }
 
-.nav-items{
-    height: 80px;
-    background: #6699CC;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 0%;
+.navbar ul{
+    list-style-type: none;
+    background: #052f5a;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
 }
 
-.nav-items a{
+.navbar a{
     text-decoration: none;
-    color: #000;
-    padding: 0 1.5rem;
+    color: #dddddd;
+    padding: 10px;
+    display: block;
+    text-align: right;
 }
 
+.navbar a:hover{
+    background-color: rgb(14, 78, 131);
+}
+
+.navbar li{
+    float: left;
+}
+
+.icon{
+    text-align: right;
+}
+
+.fa-brands.fa-linkedin{
+    bottom: 0%;
+    color: #000;
+}
+
+.icon a:hover{
+    color: #052f5a;
+}
