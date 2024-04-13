@@ -1,45 +1,125 @@
-h1 {
-color: #000;
-text-align: center;
-font-size: 1.5rem;
-font-weight: bold;
-font-style: italic;
-padding: 0 2rem;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.navbar ul{
-    list-style-type: none;
-    background: #052f5a;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+body{
+    background-image: url(surf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.navbar a{
+.left::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgb(255, 255, 255);
+    opacity: .5;
+}
+
+.disclaimertext::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgb(255, 255, 255);
+    opacity: .75;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 5%;
+}
+
+.logo{
+    font-size: 24px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
     text-decoration: none;
-    color: #dddddd;
-    padding: 10px;
-    display: block;
-    text-align: right;
-}
-
-.navbar a:hover{
-    background-color: rgb(14, 78, 131);
-}
-
-.navbar li{
-    float: left;
-}
-
-.icon{
-    text-align: right;
-}
-
-.fa-brands.fa-linkedin{
-    bottom: 0%;
     color: #000;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.icon a:hover{
+.content{
+    float: left;
+    margin: 30px 150px 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left h1{
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: left;
+    position: relative;
+}
+
+.disclaimertext h2{
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: left;
+    position: relative;
+}
+
+.disclaimertext p{
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: left;
+    position: relative;
+}
+
+.left h3{
+    font-size: 40px;
+    color: #052f5a;
+    line-height: 2.3;
+}
+
+.left p{
+    font-size: 10px;
+    color: #000;
+    line-height: 1.9;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 28px;
+    background: #052f5a;
+    border: 2px solid #052f5a;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: transparent;
     color: #052f5a;
 }
